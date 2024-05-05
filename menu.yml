@@ -1,0 +1,57 @@
+Dashboard
+
+Products
+    ProductsList
+    CreateProduct
+    UpdatePrice
+    PrintLabels
+    Units
+    Categories
+    warehouses
+    Brands
+    
+Sales
+    SalesList
+    CreateSale
+    POS
+    SaleReturn
+    
+Purchases
+    PurchasesList
+    CreatePurchase
+    PurchasesReturn
+    
+Stocks
+    ViewStocks
+    UpdateStock
+    StockTransfers
+    StockHistory
+    
+Peoples
+    Customers
+    Suppliers
+    
+Accounting
+    AccountsDeposits
+    Expenses
+    ExpenseCategories
+    DepositCategories
+    PaymentMethods
+    
+Reports
+    ProfitAndLoss
+    StockReport
+    ProductReport
+    SaleReport
+    PurchaseReport
+    CustomerReport
+    SupplierReport
+    
+Settings
+    SystemSettings
+    ModuleSettings
+    Currency
+    
+AdminUsers
+    Users
+    Roles

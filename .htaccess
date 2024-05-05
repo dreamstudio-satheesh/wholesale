@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+#Disable index view
+options -Indexes
+
+#hide a Specifuc File
+
+<Files .env>
+order allow,deny
+Deny from all
+</Files>
+
+
+# block files which needs to be hidden, specify .example extension of the file
+<Files ~ "\.(json|example|config.js|md|gitignore|gitattributes|lock)$">
+    Order allow,deny
+    Deny from all
+</Files>
