@@ -10,9 +10,9 @@ class Categories extends Component
 {
     use WithPagination;
 
-    public $name, $parent_id=null, $category_id;
+    public $id,$name, $parent_id=null, $category_id;
     public $search = '';
-    public $sortField = 'name'; // default sort field
+    public $sortField = 'id'; // default sort field
     public $sortDirection = 'asc'; // or 'desc'
     protected $paginationTheme = 'bootstrap';
 

@@ -17,7 +17,8 @@
                     @if ($categories && $categories->count() > 0)
                         <thead>
                             <tr>
-                                <th>No.</th>
+                               
+                                <th>ID</th>
                                 <th>Name</th>
                                 <th>Parent</th>
                                 <th>Actions</th>
@@ -26,9 +27,8 @@
                         <tbody>
                             @foreach ($categories as $category)
                                 <tr>
-                                    <td>{{ ($categories->currentPage() - 1) * $categories->perPage() + $loop->index + 1 }}
-                                    </td>
-
+                                  
+                                    <td>{{ $category->id }}</td>
                                     <td>{{ $category->name }}</td>
                                     <td>{{ $category->parent ? $category->parent->name : 'No Parent' }}</td>
                                     <td>
